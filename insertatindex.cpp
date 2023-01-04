@@ -56,7 +56,7 @@ void insertatend(node* &head, node* &tail, int d){
 
 }
 
-void insertinmiddle(node* &head, node* &tail, int d, int pos){
+void insertatindex(node* &head, node* &tail, int d, int pos){
 
     if (pos==0){
         insertatfront(head,tail,d);
@@ -107,9 +107,9 @@ int main()
 
     printll(head);
 
-    insertinmiddle(head,tail,100,2);
-    insertinmiddle(head,tail,100,11);
-    insertinmiddle(head,tail,100,0);
+    insertatindex(head,tail,100,2);
+    insertatindex(head,tail,100,11);
+    insertatindex(head,tail,100,0);
 
     printll(head);
 
